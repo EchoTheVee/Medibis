@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameManager gm;
     public Rigidbody rb;
     public float moveSpeed;
     public float jumpForce;
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -35,6 +37,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            gm.atIIU = !gm.atIIU;
         }
     }
 }

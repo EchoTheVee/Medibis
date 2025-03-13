@@ -4,7 +4,7 @@ using System.Collections.Generic;
 [AddComponentMenu("Camera-Control/Smooth Mouse Look")]
 public class SmoothMouseLook : MonoBehaviour
 {
-
+    public GameManager gm;
     public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
     public RotationAxes axes = RotationAxes.MouseXAndY;
     public float sensitivityX = 15F;
@@ -23,7 +23,7 @@ public class SmoothMouseLook : MonoBehaviour
     Quaternion originalRotation;
     void Update()
     {
-        if (axes == RotationAxes.MouseXAndY)
+        if (axes == RotationAxes.MouseXAndY && gm.atIIU == false)
         {
             //Resets the average rotation
             rotAverageY = 0f;
@@ -62,7 +62,7 @@ public class SmoothMouseLook : MonoBehaviour
             rotAverageX /= rotArrayX.Count;
 
             //Clamp the rotation average to be within a specific value range
-            
+
             //rotAverageY = ClampAngle(rotAverageY, minimumY, maximumY);
             //rotAverageX = ClampAngle(rotAverageX, minimumX, maximumX);
 
@@ -73,7 +73,7 @@ public class SmoothMouseLook : MonoBehaviour
             //Rotate
             transform.localRotation = originalRotation * xQuaternion * yQuaternion;
         }
-        else if (axes == RotationAxes.MouseX)
+        else if (axes == RotationAxes.MouseX && gm.atIIU == false)
         {
             rotAverageX = 0f;
             rotationX += Input.GetAxis("Mouse X") * sensitivityX;
@@ -87,11 +87,11 @@ public class SmoothMouseLook : MonoBehaviour
                 rotAverageX += rotArrayX[i];
             }
             rotAverageX /= rotArrayX.Count;
-           // rotAverageX = ClampAngle(rotAverageX, minimumX, maximumX);
+            // rotAverageX = ClampAngle(rotAverageX, minimumX, maximumX);
             Quaternion xQuaternion = Quaternion.AngleAxis(rotAverageX, Vector3.up);
             transform.localRotation = originalRotation * xQuaternion;
         }
-        else
+        else if (axes == RotationAxes.MouseY && gm.atIIU == false)
         {
             rotAverageY = 0f;
             rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
