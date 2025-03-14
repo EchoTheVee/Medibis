@@ -1,34 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
-public class Collectible : MonoBehaviour
+public class collectible : MonoBehaviour
 {
     public Rigidbody Rigidbody;
     public int Burnout;
     public int StaminaBoost { get; private set; }
 
-    public Collectible(int staminaBoost)
-    {
-        StaminaBoost = staminaBoost;
-    }
+    public static int collectibleCount = 0; // Tracks how many have been collected
+    public float staminaRestoreAmount = 20f; // Amount of stamina restored
 
-    public void Collect(Player player)
+    void OnTriggerEnter(Collider other)
     {
-        player.Stamina = Math.Min(player.Stamina + StaminaBoost, player.MaxStamina);
-        Debug.Log($"Collected an inspiration boost! Stamina increased by {StaminaBoost}. Current stamina: {player.Stamina}");
-    }
+        PlayerStamina playerStamina = other.GetComponent<PlayerStamina>();
 
-// Start is called before the first frame update
-void Start()
-    {
+        if (playerStamina != null)
+        {
+            collectibleCount++; // Increase the collectible count
+            playerStamina.RestoreStamina(staminaRestoreAmount); // Restore draw stamina
+            Debug.Log("Collected! Total: " + collectibleCount + " | Stamina Restored: " + staminaRestoreAmount);
+            
+        }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
+      if (GameObject.Find("Player"))
+      {
+        Destroy(gameObject); // Remove this collectible
+      }
     }
 }
