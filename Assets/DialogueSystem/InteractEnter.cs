@@ -23,7 +23,7 @@ public class InteractEnter : MonoBehaviour
         {
             interactIcon.SetActive(true);
         }
-        else
+        if(!playerIsIn)
         {
             interactIcon.SetActive(false);
         }
