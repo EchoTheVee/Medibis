@@ -1275,7 +1275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 1800025019}
   rb: {fileID: 1474201805}
-  moveSpeed: 5
+  moveSpeed: 30
   jumpForce: 5
   horizontalInput: 0
   verticalInput: 0

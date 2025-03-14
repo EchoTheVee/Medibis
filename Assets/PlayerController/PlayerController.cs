@@ -19,6 +19,12 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void FixedUpdate()
+    {
+        rb.AddRelativeForce(Vector3.forward * moveSpeed * verticalInput);
+        rb.AddRelativeForce(Vector3.right * moveSpeed * horizontalInput);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -31,8 +37,7 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-        rb.AddRelativeForce(Vector3.forward * moveSpeed * verticalInput);
-        rb.AddRelativeForce(Vector3.right * moveSpeed * horizontalInput);
+        
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
