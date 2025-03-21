@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Carlos art and codes/Scripts/Level1.unity
     guid: d9e9ae79a4d884442be49d006b9faef6
   - enabled: 1
-    path: Assets/Carlos art and codes/Scripts/Level2.unity
+    path: Assets/Scenes/Level2.unity
     guid: 2e8a98e986945fd44840e86123c7cb34
   - enabled: 1
     path: Assets/Carlos art and codes/Scripts/Level3.unity
