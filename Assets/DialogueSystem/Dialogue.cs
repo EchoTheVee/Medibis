@@ -5,9 +5,11 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
+    //PROPERTY OF OTTER PRODUCTIONS [DO NOT REMOVE]
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    public GameObject[] pics;
 
     private int index;
     //public GameObject pic;
@@ -22,6 +24,33 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (index == 0)
+        {
+            pics[0].SetActive(true);
+        }
+        else
+        {
+            pics[0].SetActive(false);
+        }
+
+        if (index == 1)
+        {
+            pics[1].SetActive(true);
+        }
+        else
+        {
+            pics[1].SetActive(false);
+        }
+
+        if (index == 2)
+        {
+            pics[2].SetActive(true);
+        }
+        else
+        {
+            pics[2].SetActive(false);
+        }
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (textComponent.text == lines[index])
@@ -30,10 +59,16 @@ public class Dialogue : MonoBehaviour
             }
             else
             {
+                pics[0].SetActive(false);
+                pics[1].SetActive(false);
+                pics[2].SetActive(false);
+
                 StopAllCoroutines();
                 textComponent.text = lines[index];
             }
         }
+
+        
     }
 
     public void StartDialogue()
