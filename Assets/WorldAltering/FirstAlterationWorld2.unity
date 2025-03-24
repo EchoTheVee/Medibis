@@ -273,6 +273,134 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!1 &21160740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 21160746}
+  - component: {fileID: 21160745}
+  - component: {fileID: 21160744}
+  - component: {fileID: 21160743}
+  - component: {fileID: 21160742}
+  - component: {fileID: 21160741}
+  m_Layer: 0
+  m_Name: TILES (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &21160741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21160740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05de02eafd870643b477957bed572e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1474201803}
+--- !u!54 &21160742
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21160740}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!65 &21160743
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21160740}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &21160744
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21160740}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f93be1d9da29deb40b4b3dd598ef6b86, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &21160745
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21160740}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &21160746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21160740}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.39, y: 2.723, z: -5.54}
+  m_LocalScale: {x: 2.7016845, y: 2.7016845, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &23168334
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +414,7 @@ GameObject:
   - component: {fileID: 23168337}
   - component: {fileID: 23168336}
   - component: {fileID: 23168339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -405,7 +533,7 @@ GameObject:
   - component: {fileID: 88456548}
   - component: {fileID: 88456547}
   - component: {fileID: 88456546}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ATDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +675,7 @@ GameObject:
   - component: {fileID: 98503892}
   - component: {fileID: 98503897}
   m_Layer: 0
-  m_Name: TILES
+  m_Name: INTERACTNPCSPOTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -589,7 +717,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98503891}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -640,8 +768,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98503891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.03, y: 2.2, z: -7.6799994}
-  m_LocalScale: {x: 1.1608493, y: 1, z: 1.3517028}
+  m_LocalPosition: {x: -8.71, y: 1.6406, z: -7.66}
+  m_LocalScale: {x: 3.518305, y: 0.122708134, z: 4.0967445}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -677,7 +805,7 @@ GameObject:
   - component: {fileID: 103625375}
   - component: {fileID: 103625374}
   - component: {fileID: 103625377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -817,7 +945,7 @@ GameObject:
   - component: {fileID: 118291797}
   - component: {fileID: 118291796}
   - component: {fileID: 118291795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,7 +1043,7 @@ GameObject:
   - component: {fileID: 120545308}
   - component: {fileID: 120545307}
   - component: {fileID: 120545310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1014,7 +1142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -1035,7 +1163,7 @@ GameObject:
   - component: {fileID: 131395023}
   - component: {fileID: 131395022}
   - component: {fileID: 131395025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,7 +1262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -1155,7 +1283,7 @@ GameObject:
   - component: {fileID: 136796946}
   - component: {fileID: 136796945}
   - component: {fileID: 136796948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1254,7 +1382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -1388,7 +1516,7 @@ GameObject:
   - component: {fileID: 175241237}
   - component: {fileID: 175241236}
   - component: {fileID: 175241235}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1596,7 +1724,7 @@ GameObject:
   - component: {fileID: 200077066}
   - component: {fileID: 200077065}
   - component: {fileID: 200077068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1695,7 +1823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -1715,7 +1843,7 @@ GameObject:
   - component: {fileID: 237776441}
   - component: {fileID: 237776440}
   - component: {fileID: 237776439}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ATDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1931,7 +2059,7 @@ GameObject:
   - component: {fileID: 289649163}
   - component: {fileID: 289649162}
   - component: {fileID: 289649165}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2030,7 +2158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -2415,7 +2543,7 @@ GameObject:
   - component: {fileID: 348820739}
   - component: {fileID: 348820738}
   - component: {fileID: 348820741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2514,7 +2642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -2611,7 +2739,7 @@ GameObject:
   - component: {fileID: 378233048}
   - component: {fileID: 378233047}
   - component: {fileID: 378233050}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2710,7 +2838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -2731,7 +2859,7 @@ GameObject:
   - component: {fileID: 383670496}
   - component: {fileID: 383670495}
   - component: {fileID: 383670498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2830,7 +2958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -3972,7 +4100,7 @@ GameObject:
   - component: {fileID: 588986913}
   - component: {fileID: 588986912}
   - component: {fileID: 588986915}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4071,7 +4199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -4569,7 +4697,7 @@ GameObject:
   - component: {fileID: 737598779}
   - component: {fileID: 737598778}
   - component: {fileID: 737598781}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4668,7 +4796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -4958,7 +5086,7 @@ GameObject:
   - component: {fileID: 772214286}
   - component: {fileID: 772214285}
   - component: {fileID: 772214288}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5057,7 +5185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -6732,7 +6860,7 @@ GameObject:
   - component: {fileID: 1059626720}
   - component: {fileID: 1059626719}
   - component: {fileID: 1059626718}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6786,7 +6914,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 128
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
@@ -6967,7 +7095,7 @@ GameObject:
   - component: {fileID: 1116396042}
   - component: {fileID: 1116396041}
   - component: {fileID: 1116396040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ColorChanger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7381,7 +7509,7 @@ GameObject:
   - component: {fileID: 1172770585}
   - component: {fileID: 1172770584}
   - component: {fileID: 1172770587}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7480,7 +7608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -7766,7 +7894,7 @@ GameObject:
   - component: {fileID: 1197972130}
   - component: {fileID: 1197972129}
   - component: {fileID: 1197972132}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7865,7 +7993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -7886,7 +8014,7 @@ GameObject:
   - component: {fileID: 1204225217}
   - component: {fileID: 1204225216}
   - component: {fileID: 1204225215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ColorChanger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7998,7 +8126,7 @@ GameObject:
   - component: {fileID: 1207995096}
   - component: {fileID: 1207995095}
   - component: {fileID: 1207995098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8097,7 +8225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -8820,7 +8948,7 @@ GameObject:
   - component: {fileID: 1343448245}
   - component: {fileID: 1343448244}
   m_Layer: 0
-  m_Name: TILES (1)
+  m_Name: INTERACTNPCSPOTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8879,7 +9007,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343448243}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8930,8 +9058,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343448243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.85, y: 2.2, z: -5.25}
-  m_LocalScale: {x: 1.1608493, y: 1, z: 1.3517028}
+  m_LocalPosition: {x: -14.48, y: 1.7389, z: -5.61}
+  m_LocalScale: {x: 3.4387732, y: 0.23016998, z: 4.004137}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9026,7 +9154,7 @@ GameObject:
   - component: {fileID: 1359393253}
   - component: {fileID: 1359393252}
   - component: {fileID: 1359393255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9125,7 +9253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -9301,7 +9429,7 @@ GameObject:
   - component: {fileID: 1415698876}
   - component: {fileID: 1415698875}
   - component: {fileID: 1415698878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9400,7 +9528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -9690,7 +9818,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 32a76832b79e84347ad9df08b12709c3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10029,7 +10157,7 @@ GameObject:
   - component: {fileID: 1566170455}
   - component: {fileID: 1566170454}
   - component: {fileID: 1566170457}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10128,7 +10256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -10622,7 +10750,7 @@ GameObject:
   - component: {fileID: 1662792018}
   - component: {fileID: 1662792017}
   - component: {fileID: 1662792016}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10643,7 +10771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -10742,7 +10870,7 @@ GameObject:
   - component: {fileID: 1664731627}
   - component: {fileID: 1664731626}
   - component: {fileID: 1664731629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10841,7 +10969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -10862,7 +10990,7 @@ GameObject:
   - component: {fileID: 1683952727}
   - component: {fileID: 1683952726}
   - component: {fileID: 1683952729}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10961,7 +11089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -11155,7 +11283,7 @@ GameObject:
   - component: {fileID: 1746262917}
   - component: {fileID: 1746262916}
   - component: {fileID: 1746262915}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ColorChanger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11483,7 +11611,7 @@ GameObject:
   - component: {fileID: 1786209919}
   - component: {fileID: 1786209918}
   - component: {fileID: 1786209917}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11859,7 +11987,7 @@ GameObject:
   - component: {fileID: 1830284352}
   - component: {fileID: 1830284351}
   - component: {fileID: 1830284350}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ColorChanger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11958,6 +12086,134 @@ Transform:
   m_Father: {fileID: 175241234}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1841286363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1841286369}
+  - component: {fileID: 1841286368}
+  - component: {fileID: 1841286367}
+  - component: {fileID: 1841286366}
+  - component: {fileID: 1841286365}
+  - component: {fileID: 1841286364}
+  m_Layer: 0
+  m_Name: TILES (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1841286364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841286363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05de02eafd870643b477957bed572e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1474201803}
+--- !u!54 &1841286365
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841286363}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!65 &1841286366
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841286363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1841286367
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841286363}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 39803f43e89c76b449e26e57019e5a21, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1841286368
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841286363}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1841286369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841286363}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.7501, y: 2.723, z: -7.3541}
+  m_LocalScale: {x: 2.7016845, y: 2.7016845, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1841898569
 GameObject:
   m_ObjectHideFlags: 0
@@ -12312,7 +12568,7 @@ GameObject:
   - component: {fileID: 1855112031}
   - component: {fileID: 1855112030}
   - component: {fileID: 1855112033}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12411,7 +12667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -13026,7 +13282,7 @@ GameObject:
   - component: {fileID: 2044528973}
   - component: {fileID: 2044528972}
   - component: {fileID: 2044528975}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13125,7 +13381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -13146,7 +13402,7 @@ GameObject:
   - component: {fileID: 2051891196}
   - component: {fileID: 2051891195}
   - component: {fileID: 2051891198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13245,7 +13501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -13266,7 +13522,7 @@ GameObject:
   - component: {fileID: 2082225358}
   - component: {fileID: 2082225357}
   - component: {fileID: 2082225360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13365,7 +13621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -13386,7 +13642,7 @@ GameObject:
   - component: {fileID: 2100429526}
   - component: {fileID: 2100429525}
   - component: {fileID: 2100429528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13485,7 +13741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
@@ -13506,7 +13762,7 @@ GameObject:
   - component: {fileID: 2113343447}
   - component: {fileID: 2113343446}
   - component: {fileID: 2113343449}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TILETABCOORD27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13605,7 +13861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   mr: {fileID: 0}
-  on: {fileID: 2100000, guid: 437f839fc159b82468dd6234822062de, type: 2}
+  on: {fileID: 2100000, guid: 42b419ae2991c6447a0c4f1b9482fafa, type: 2}
   off: {fileID: 2100000, guid: 5e933a0a0722ff4468e076882cd9f8a2, type: 2}
   red: {fileID: 2100000, guid: 24973927b86f3c347a5bf34f669f4f0a, type: 2}
   blue: {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
