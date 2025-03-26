@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 840558937}
   - component: {fileID: 840558936}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: dream plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1628,7 +1628,7 @@ GameObject:
   - component: {fileID: 1788309558}
   - component: {fileID: 1788309557}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: teleporter 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1741,7 +1741,7 @@ GameObject:
   - component: {fileID: 1857971521}
   - component: {fileID: 1857971520}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: bedroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2260,7 +2260,7 @@ GameObject:
   - component: {fileID: 1870067043}
   - component: {fileID: 1870067042}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: walk way
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2551,7 +2551,7 @@ GameObject:
   - component: {fileID: 2018256990}
   - component: {fileID: 2018256996}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: teleporter 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
