@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/LevelAssets/Levels/tutorial Lv.unity
+    guid: 652db29109ef8ed43ad3aa4dd631fa55
+  - enabled: 1
     path: Assets/WorldAltering/FirstAlterationWorld2.unity
     guid: 7b56046983828cf41a7fc24969c94791
   - enabled: 0
