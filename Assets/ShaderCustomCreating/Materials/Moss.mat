@@ -81,7 +81,7 @@ Material:
     m_Floats:
     - _AccumulationSize: 75
     - _AlphaClip: 0
-    - _Amount: 0.626
+    - _Amount: 0.518
     - _Blend: 100
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -97,7 +97,7 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _NoiseSize: 500
-    - _NoiseStrength: 0.794
+    - _NoiseStrength: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -115,7 +115,7 @@ Material:
     - _BaseColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
     - _Color: {r: 0.072541624, g: 0.6603774, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GrowDirection: {r: 1, g: 0, b: 0, a: 0}
+    - _GrowDirection: {r: 1, g: 1, b: 1, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4470086094737368423
