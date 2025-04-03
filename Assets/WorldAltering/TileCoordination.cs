@@ -34,38 +34,42 @@ public class TileCoordination : MonoBehaviour
 
     private void OnMouseDown()
     {
-        isActive = !isActive;
-
-        if (gm.eraserSelected)
+        if (gm.burnoutNumber != 50)
         {
-            isActiveEraser = true;
-            isActive = false;
-            isActiveRed = false;
-            isActiveBlue = false;
-        }
+            isActive = !isActive;
+            gm.burnoutNumber = gm.burnoutNumber + 5;
 
-        if (gm.greenSelected)
-        {
-            isActiveEraser = false;
-            isActive = true;
-            isActiveRed = false;
-            isActiveBlue = false;
-        }
+            if (gm.eraserSelected)
+            {
+                isActiveEraser = true;
+                isActive = false;
+                isActiveRed = false;
+                isActiveBlue = false;
+            }
 
-        if (gm.redSelected)
-        {
-            isActiveEraser = false;
-            isActive = false;
-            isActiveRed = true;
-            isActiveBlue = false;
-        }
+            if (gm.greenSelected)
+            {
+                isActiveEraser = false;
+                isActive = true;
+                isActiveRed = false;
+                isActiveBlue = false;
+            }
 
-        if (gm.blueSelected)
-        {
-            isActiveEraser = false;
-            isActive = false;
-            isActiveRed = false;
-            isActiveBlue = true;
+            if (gm.redSelected)
+            {
+                isActiveEraser = false;
+                isActive = false;
+                isActiveRed = true;
+                isActiveBlue = false;
+            }
+
+            if (gm.blueSelected)
+            {
+                isActiveEraser = false;
+                isActive = false;
+                isActiveRed = false;
+                isActiveBlue = true;
+            }
         }
     }
 }

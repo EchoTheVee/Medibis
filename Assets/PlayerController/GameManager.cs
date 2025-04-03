@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour
     public bool blueSelected;
     public bool redSelected;
     public bool greenSelected;
+    public int burnoutNumber;
+    public Slider burnoutMeter;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,18 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        burnoutMeter.value = burnoutNumber;
+
+        if (burnoutNumber > 50)
+        {
+            burnoutNumber = 50;
+        }
+
+        if (burnoutNumber < 0)
+        {
+            burnoutNumber = 0;
+        }
+
         if (colorWheel == 0)
         {
             eraserSelected = true;

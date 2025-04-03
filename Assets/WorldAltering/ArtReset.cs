@@ -6,12 +6,18 @@ public class ArtReset : MonoBehaviour
 {
     public WorldAltering wa;
     public bool iitp;
+    public GameManager gm;
+
+    private void Start()
+    {
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-
+            gm.burnoutNumber = 0;
         iitp = true;
         }
         
