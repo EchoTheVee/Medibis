@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public GameObject cam;
     public bool isOnGround;
-    public float gravityForce;
+    //public float gravityForce;
     
     // Start is called before the first frame update
     void Start()
@@ -30,10 +30,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isOnGround)
-        {
-            rb.AddForce(Vector3.down * gravityForce, ForceMode.Impulse);
-        }
+        
         //float yRotation = cam.transform.eulerAngles.y;
 
         Debug.Log($"cam rot y {cam.transform.rotation.y}");
@@ -54,6 +51,8 @@ public class PlayerController : MonoBehaviour
         {
             gm.atIIU = !gm.atIIU;
         }
+
+        
     }
 
     private void OnCollisionEnter(Collision collision)
