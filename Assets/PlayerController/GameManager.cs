@@ -13,10 +13,14 @@ public class GameManager : MonoBehaviour
     public bool greenSelected;
     public int burnoutNumber;
     public Slider burnoutMeter;
+    public int seconds;
+    public Camera playerCam;
+    public GameObject tab;
     // Start is called before the first frame update
     void Start()
     {
-        
+        burnoutMeter.gameObject.SetActive(false);
+        StartCoroutine(uiStart(seconds));
     }
 
     // Update is called once per frame
@@ -65,5 +69,13 @@ public class GameManager : MonoBehaviour
             redSelected = false;
             eraserSelected = false;
         }
+    }
+
+    IEnumerator uiStart(int seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        playerCam.gameObject.SetActive(true);
+        burnoutMeter.gameObject.SetActive(true);
+        tab.SetActive(true);
     }
 }
