@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     public GameObject cinLight2;
     public GameObject lvlLight;
     public GameObject lvlLight2;
+    public float seconds2;
     // Start is called before the first frame update
     void Start()
     {
@@ -85,5 +87,16 @@ public class GameManager : MonoBehaviour
         cinLight2.SetActive(false);
         lvlLight.SetActive(true);
         lvlLight2.SetActive(true);
+    }
+
+    public void doorCutscene()
+    {
+        StartCoroutine(levelEnd(seconds2));
+    }
+
+    IEnumerator levelEnd(float seconds2)
+    {
+        yield return new WaitForSeconds(seconds2);
+        SceneManager.LoadScene("level 1");
     }
 }
