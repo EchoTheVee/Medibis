@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArtReset : MonoBehaviour
+public class ArtResetFill : MonoBehaviour
 {
     public WorldAltering wa;
     public bool iitp;
@@ -20,7 +20,7 @@ public class ArtReset : MonoBehaviour
             gm.burnoutNumber = 0;
             iitp = true;
         }
-        
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -37,9 +37,10 @@ public class ArtReset : MonoBehaviour
         {
             for (int i = 0; i < wa.tCArray.Length; i++)
             {
-                wa.tCArray[i].isActiveEraser = true;
-                wa.tileArray[i].SetActive(false);
-                wa.mrTabArray[i].material = wa.tCArray[i].off;
+                wa.tCArray[i].isActiveEraser = false;
+                wa.tCArray[i].isActive = true;
+                wa.tileArray[i].SetActive(true);
+                wa.mrTabArray[i].material = wa.tCArray[i].on;
             }
         }
     }
