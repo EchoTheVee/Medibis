@@ -32,8 +32,15 @@ public class TileCoordination : MonoBehaviour
         
     }
 
+    private void OnMouseEnter()
+    {
+        Debug.Log("MOUSE IS INSIDE");
+    }
+
     private void OnMouseDown()
     {
+        Debug.Log("ISCLICKING!");
+
         if (gm.burnoutNumber != 50)
         {
             isActive = !isActive;

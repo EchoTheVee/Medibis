@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public Slider burnoutMeter;
     public float seconds;
     public Camera playerCam;
+    public Camera cutsceneCam1;
     public GameObject tab;
     public GameObject cinLight;
     public GameObject cinLight2;
@@ -87,6 +88,7 @@ public class GameManager : MonoBehaviour
         cinLight2.SetActive(false);
         lvlLight.SetActive(true);
         lvlLight2.SetActive(true);
+        cutsceneCam1.gameObject.SetActive(false);
     }
 
     public void doorCutscene()

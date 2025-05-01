@@ -33,8 +33,8 @@ public class PlayerController : MonoBehaviour
         
         //float yRotation = cam.transform.eulerAngles.y;
 
-        Debug.Log($"cam rot y {cam.transform.rotation.y}");
-        transform.rotation = Quaternion.Euler(0, cam.transform.localEulerAngles.y, 0);
+        //Debug.Log($"cam rot y {cam.transform.rotation.y}");
+        //transform.rotation = Quaternion.Euler(0, cam.transform.localEulerAngles.y, 0);
         //transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotation, transform.eulerAngles.z);
 
         horizontalInput = Input.GetAxis("Horizontal");
