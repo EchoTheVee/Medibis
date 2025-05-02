@@ -16,7 +16,9 @@ public class TileCoordination : MonoBehaviour
     public bool isActiveRed;
     public bool isActiveBlue;
 
-    
+    //public Collider myCollider;
+
+
     //public bool isActive;
 
     // Start is called before the first frame update
@@ -24,6 +26,7 @@ public class TileCoordination : MonoBehaviour
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         mr = GetComponent<MeshRenderer>();
+        
     }
 
     // Update is called once per frame
@@ -39,6 +42,8 @@ public class TileCoordination : MonoBehaviour
 
     private void OnMouseDown()
     {
+
+        
         Debug.Log("ISCLICKING!");
 
         if (gm.burnoutNumber != 50)

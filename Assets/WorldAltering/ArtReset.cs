@@ -17,6 +17,10 @@ public class ArtReset : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if (gm == null)
+            {
+                Debug.Log($"Art Reset on {gameObject.name}");
+            }
             gm.burnoutNumber = 0;
             iitp = true;
         }
