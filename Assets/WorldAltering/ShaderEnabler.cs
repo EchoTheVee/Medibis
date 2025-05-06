@@ -20,6 +20,7 @@ public class ShaderEnabler : MonoBehaviour
     {
         //noise.GetType("NoiseScale")
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        vc.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -32,11 +33,12 @@ public class ShaderEnabler : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            vc.gameObject.SetActive(true);
             ma.enabled = false;
             pc.enabled = false;
             doorCam.SetActive(true);
             roomCam.SetActive(false);
-            //playerCam.SetActive(false);
+            playerCam.SetActive(false);
             vc.Priority = 50;
             roomCam.transform.position = doorCam.transform.position;
             roomCam.transform.rotation = doorCam.transform.rotation;
