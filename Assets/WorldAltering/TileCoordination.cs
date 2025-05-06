@@ -6,6 +6,7 @@ public class TileCoordination : MonoBehaviour
 {
     public GameManager gm;
     public MeshRenderer mr;
+    public PlayerController pc;
     public Material on;
     public Material off;
     public Material red;
@@ -48,6 +49,8 @@ public class TileCoordination : MonoBehaviour
 
         if (gm.burnoutNumber != 50)
         {
+            pc.audioSource.PlayOneShot(pc.audioClip3);
+
             isActive = !isActive;
             gm.burnoutNumber = gm.burnoutNumber + 5;
 
