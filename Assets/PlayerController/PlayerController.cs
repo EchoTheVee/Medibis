@@ -12,8 +12,12 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public GameObject cam;
     public bool isOnGround;
+    public AudioSource audioSource;
+    public AudioClip audioClip1;
+    public AudioClip audioClip2;
+    public AudioClip audioClip3;
     //public float gravityForce;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +54,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             gm.atIIU = !gm.atIIU;
+            sfx();
         }
 
         
@@ -68,6 +73,19 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             isOnGround = false;
+        }
+    }
+
+    public void sfx()
+    {
+        if (gm.atIIU)
+        {
+            audioSource.PlayOneShot(audioClip1);
+        }
+
+        if (!gm.atIIU)
+        {
+            audioSource.PlayOneShot(audioClip2);
         }
     }
 }

@@ -45689,6 +45689,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1064611038}
+    - target: {fileID: 3549652145919365456, guid: 04e6912fe1edf8244b0e57b8363d8c7d,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1064611049}
     - target: {fileID: 3549652145919365457, guid: 04e6912fe1edf8244b0e57b8363d8c7d,
         type: 3}
       propertyPath: m_UseGravity
