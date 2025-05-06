@@ -12,8 +12,12 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public GameObject cam;
     public bool isOnGround;
+    public AudioSource audioSource;
+    public AudioClip audioClip1;
+    public AudioClip audioClip2;
+    public AudioClip audioClip3;
     //public float gravityForce;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +37,8 @@ public class PlayerController : MonoBehaviour
         
         //float yRotation = cam.transform.eulerAngles.y;
 
-        Debug.Log($"cam rot y {cam.transform.rotation.y}");
-        transform.rotation = Quaternion.Euler(0, cam.transform.localEulerAngles.y, 0);
+        //Debug.Log($"cam rot y {cam.transform.rotation.y}");
+        //transform.rotation = Quaternion.Euler(0, cam.transform.localEulerAngles.y, 0);
         //transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotation, transform.eulerAngles.z);
 
         horizontalInput = Input.GetAxis("Horizontal");
@@ -50,6 +54,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             gm.atIIU = !gm.atIIU;
+            sfx();
         }
 
         
@@ -68,6 +73,19 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             isOnGround = false;
+        }
+    }
+
+    public void sfx()
+    {
+        if (gm.atIIU)
+        {
+            audioSource.PlayOneShot(audioClip1);
+        }
+
+        if (!gm.atIIU)
+        {
+            audioSource.PlayOneShot(audioClip2);
         }
     }
 }

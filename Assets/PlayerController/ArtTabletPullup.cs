@@ -7,6 +7,7 @@ public class ArtTabletPullup : MonoBehaviour
     public GameObject artTabletOn;
     public GameObject artTabletOff;
     public GameManager gm;
+    public mouseaim ma;
     //public string cheese;
     // Start is called before the first frame update
     void Start()
@@ -19,16 +20,20 @@ public class ArtTabletPullup : MonoBehaviour
     {
         if (gm.atIIU == true)
         {
+            ma.enabled = false;
             artTabletOff.SetActive(false);
             artTabletOn.SetActive(true);
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
 
         if (gm.atIIU == false)
         {
+            ma.enabled = true;
             artTabletOn.SetActive(false);
             artTabletOff.SetActive(true);
             Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
