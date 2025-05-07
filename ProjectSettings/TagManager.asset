@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Next_Level
+  - Crate
   layers:
   - Default
   - TransparentFX
