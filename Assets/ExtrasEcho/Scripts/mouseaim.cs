@@ -43,7 +43,7 @@ public class mouseaim : MonoBehaviour
 
 
         float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity * 0;
+        float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
         
 
         // Rotate the Camera around its local X axis
